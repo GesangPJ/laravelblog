@@ -10,9 +10,7 @@ class Postingans extends Model
 {
     // menentukan primary key yang diambil dari tabel postingans
     protected  $primaryKey = 'slug';
-
-    //Jika tabel bernama lain
-    //protected $table = 'postingan';
+    protected $keyType = 'string';
 }
 
 
