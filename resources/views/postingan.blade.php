@@ -1,7 +1,6 @@
 <!--
 Halaman untuk menampilkan postingan secara full
 -->
-
 <x-layout>
     <x-slot:title>Blog Post</x-slot:title>
     <h2>Blog Test</h2>

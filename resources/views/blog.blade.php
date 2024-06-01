@@ -1,12 +1,10 @@
 <!--
 Halaman untuk menampilkan daftar postingan
 -->
-
 <x-layout>
     <x-slot:title>{{$halaman}}</x-slot:title>
     <h2>Blog Test</h2>
 <br>
-
 @foreach ($posts as $post )
 
     <article class="py-8 max-w-screen-md border-b border-gray-300">
