@@ -53,10 +53,7 @@ Route::get('/service',function(){
 });
 
 //Halaman Menampilkan Postingan Full
-Route::get('/blog/{slug}',function($slug){
-    //Cari postingan berdasarkan slug
-    $post = Postingans::find($slug);
-
+Route::get('/blog/{post:slug}', function( Postingans $post){
     //Kirim data ke view postingan
     return view('postingan',['title'=>'Postingan Blog','post'=>$post]);
 
