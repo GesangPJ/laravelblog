@@ -27,3 +27,12 @@ class PostFactory extends Factory
         ];
     }
 }
+
+/**
+ * Running the factory :
+ * App\Models\Post::factory(x)->create();
+ *
+ * Recycle Data :
+ * App\Models\Post::factory(x)->recycle(User::factory(x))->create();
+ *
+ */
