@@ -1,0 +1,1 @@
+ALTER TABLE laravel11test.users auto_increment = 1;
