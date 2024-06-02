@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Postingans;
+use App\Models\Postingan;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
@@ -29,7 +29,7 @@ Route::get('/about', function(){
 
 //Halaman Blog
 Route::get('/blog', function(){
-    return view('blog',['halaman'=>'Blog','posts'=>Postingans::all()]);
+    return view('blog',['halaman'=>'Blog','posts'=>Postingan::all()]);
 });
 
 //Halaman Contact
@@ -53,7 +53,7 @@ Route::get('/service',function(){
 });
 
 //Halaman Menampilkan Postingan Full
-Route::get('/blog/{post:slug}', function( Postingans $post){
+Route::get('/blog/{post:slug}', function( Postingan $post){
     //Kirim data ke view postingan
     return view('postingan',['title'=>'Postingan Blog','post'=>$post]);
 
