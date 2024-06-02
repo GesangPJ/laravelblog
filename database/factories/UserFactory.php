@@ -36,6 +36,8 @@ class UserFactory extends Factory
     /**
      * Mengganti salah satu nilai field
      */
+
+     // Menjadikan field verifikasi email jadi Null
     public function unverified(): static
     {
         return $this->state(fn (array $attributes) => [
