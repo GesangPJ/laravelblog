@@ -24,6 +24,8 @@ require __DIR__.'/auth.php';
 
 // Halaman About
 Route::get('/about', function(){
+
+    // Arahkan ke halaman about
     return view('about',['halaman'=>'About Us']);
 });
 
@@ -57,4 +59,17 @@ Route::get('/blog/{post:slug}', function( Postingan $post){
     //Kirim data ke view postingan
     return view('postingan',['title'=>'Postingan Blog','post'=>$post]);
 
+});
+
+// Halaman test error
+Route::get('/errortest',function(){
+    // Error test
+    //abort(500); //Server Error
+    //abort(401); //Unauthorized
+    //abort(402); //Payment required
+    //abort(403); // Forbidden
+    //abort(404); // Page Not Found
+    //abort(419); // Page expired
+    //abort(429); // Too many requests
+    //abort(503); //Service Unavailable
 });
