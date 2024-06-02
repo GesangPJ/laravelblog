@@ -9,6 +9,6 @@ SELECT
     p.created_at,
     p.updated_at
 FROM
-    posting p
+    posts p
 JOIN
     users u ON p.id_author = u.id
